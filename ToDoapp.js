@@ -1,7 +1,10 @@
 const http = require('http');
 const port = 3000;
 
-let jobs = ['Invade Russia', 'Insult Mexico', 'Tweet' ];
+let jobs = [{task: "Invade Russia", done: true},
+            {task: "Insult Mexico", done: true},
+            {task: "Tweet", done: false}]
+
 
 function handleMyRequest(request, response) {
   if (request.url === '/api/todos' && request.method === 'GET') {
