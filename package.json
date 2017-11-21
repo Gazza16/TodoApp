@@ -1,0 +1,24 @@
+{
+  "name": "tofo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ToDoapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gazza16/ToDoapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gazza16/ToDoapp/issues"
+  },
+  "homepage": "https://github.com/Gazza16/ToDoapp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "save": "^2.3.1"
+  }
+}
