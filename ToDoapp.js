@@ -13,11 +13,12 @@ function handleMyRequest(request, response) {
     })
     response.end(JSON.stringify(jobs));
 
-  }
-  else if (request.url === '/bye') {
-    response.end('Goodbye');
-  } else {
-    response.end('404');
+  } else if (request.url === '/api/teapot') {
+      response.writeHead('418');
+      response.end()
+  }   else {
+      response.writeHead('404');
+      response.end()
   }
 
 }
