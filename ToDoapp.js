@@ -4,7 +4,7 @@ const port = 3000;
 let jobs = ['Invade Russia', 'Insult Mexico', 'Tweet' ];
 
 function handleMyRequest(request, response) {
-  if (request.url === '/jobs' && request.method === 'GET') {
+  if (request.url === '/api/todos' && request.method === 'GET') {
     response.writeHead(200, {
       'Content-Type': 'application/json'
     })
