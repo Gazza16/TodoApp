@@ -1,10 +1,13 @@
 const http = require('http');
 const port = 3000;
 
-let jobs = ['Invade Russia', 'Insult Mexico', 'Tweet' ];
+let jobs = [{task: "Invade Russia", done: true},
+            {task: "Insult Mexico", done: true},
+            {task: "Tweet", done: false}]
+
 
 function handleMyRequest(request, response) {
-  if (request.url === '/jobs') {
+  if (request.url === '/api/todos' && request.method === 'GET') {
     response.writeHead(200, {
       'Content-Type': 'application/json'
     })
@@ -18,7 +21,6 @@ function handleMyRequest(request, response) {
   }
 
 }
-
 
 const server = http.createServer(handleMyRequest)
 
